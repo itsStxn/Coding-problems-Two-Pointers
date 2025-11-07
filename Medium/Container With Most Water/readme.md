@@ -10,7 +10,7 @@ Find two lines that together with the x-axis form a container, such that the con
 ### Example 1
 ***Input:*** `height` = [1,8,6,2,5,4,8,3,7]  
 ***Output:*** 49  
-***Explanation:*** 
+***Explanation:***
 - The above vertical lines are represented by array `[1,8,6,2,5,4,8,3,7]`
 - In this case, the max area of water (blue section) the container can contain is 49.
 
@@ -19,8 +19,8 @@ Find two lines that together with the x-axis form a container, such that the con
 ***Output:*** 1
 
 ### Constraints
-n == `height.length`
-2 <= `n` <= 105
+n == `height.length`  
+2 <= `n` <= 105  
 0 <= `height[i]` <= 104
 
 ## Strategy

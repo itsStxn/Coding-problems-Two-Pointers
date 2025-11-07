@@ -8,3 +8,6 @@
 ## Medium
 - Two Sum II - Input Array Is Sorted
 - 3Sum
+
+## Hard
+- Trapping Rain Water

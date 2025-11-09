@@ -20,9 +20,9 @@ Given `n` non-negative integers representing an elevation map where the width of
 0 <= height[i] <= 105
 
 ## Strategy
-Use two pointers on the right and left. Use them to index `height` and record the highest peaks they find. Costantly compare the two peaks. If the peak height on the right is higher than the one on the left, the left pointer moves forward and viceversa.
+Use two pointers on the right and left. Use them to index `height` and record the highest peaks they find. Costantly compare the two pointers. If the height on the right is higher than the one on the left, the left pointer moves forward and viceversa.
 
-Compare the current height indexed by a pointer to its peak and update it when the current height is higher. Sum the difference between the peak and current height into the `trappedWater` variable.
+Compare the current height indexed by a pointer to its recorded peak and update it when the current height is higher. Sum the difference between the peak and current height into the `trappedWater` variable.
 
 The operation stops when the pointers meet or get past each other.
 

@@ -40,4 +40,4 @@ Compare the `target` to the indexed sum to decide if `left` moves up or `right` 
 Each indexed is processed exactly once.
 
 ## Space Complexity - O(1)
-No extra space is used.
+No data structure variables with `n` size are used.

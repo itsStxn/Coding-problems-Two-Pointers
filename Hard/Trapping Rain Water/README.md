@@ -30,4 +30,4 @@ The operation stops when the pointers meet or get past each other.
 Each element in `height` is processed once.
 
 ## Space Complexity - O(1)
-No variables with space allocation that depend on `n`.
+No data structure variables with `n` size are used.

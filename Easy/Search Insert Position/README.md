@@ -35,4 +35,4 @@ The index shared by the pointers is the index where the target would be if it we
 Each teration reduces the search space by half, by excluding the halves that don't contain the target.
 
 ## Space Complexity - O(1)
-The variables have costant space complexity.
+No data structure variables with `n` size are used.

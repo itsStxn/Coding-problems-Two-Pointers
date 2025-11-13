@@ -32,4 +32,4 @@ Calculate the area considering that the height in the formula needs to be the sm
 Each element is traversed once.
 
 ## Space Complexity - O(1)
-There is no extra space used.
+No data structure variables with `n` size are used.

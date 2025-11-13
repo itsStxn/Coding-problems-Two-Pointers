@@ -35,4 +35,4 @@ If the skip brings pointers to clash, it means that the remaining string has no 
 The nested loops speed up the iteration, moving a pointer forward when it indexes to a non-alphanumeric character. Each index is processed a costant amount of times.
 
 ## Space Complexity - O(1)
-Each variable has costant size.
+No data structure variables with `n` size are used.

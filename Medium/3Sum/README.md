@@ -28,7 +28,7 @@ Notice that the order of the output and the order of the triplets does not matte
 
 ### Constraints:
 - 3 <= `nums.length` <= 3000
-- -105 <= `nums[i]` <= 105
+- -10^5 <= `nums[i]` <= 10^5
 
 ## Strategy
 Sort the `nums` array and iterate for each negative number. For each negative number, use `TwoSum()` to find the sum that is equal to the absolute value of the current negative number.

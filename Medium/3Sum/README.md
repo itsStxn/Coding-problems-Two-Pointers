@@ -31,7 +31,7 @@ Notice that the order of the output and the order of the triplets does not matte
 - -10^5 <= `nums[i]` <= 10^5
 
 ## Strategy
-Sort the `nums` array and iterate for each negative number. For each negative number, use `TwoSum()` to find the sum that is equal to the absolute value of the current negative number.
+Sort the `nums` array and iterate for each negative number. For each negative number, use a `TwoSum` approach to find the sum of the three numbers that is equal to zero.
 
 A valid `nums` input array must have at least one negative and positive number in order for numbers to cancel out to 0.
 

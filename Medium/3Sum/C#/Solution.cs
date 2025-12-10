@@ -3,40 +3,36 @@
 public class Solution {
 	public IList<IList<int>> ThreeSum(int[] nums) {
 		Array.Sort(nums);
+		int n = nums.Length;
+		var ans = new List<IList<int>>();
 		
-		IList<IList<int>> result = [];
-		if (nums[0] > 0 || nums[^1] < 0) return result;
+		if (nums[^1] < 0) return ans;
 		
-		for (int i = 0; i < nums.Length - 2; i++) {
-			if (nums[i] > 0) return result;
-			if (i == 0 && nums[i] != nums[i - 1]) {
-				TwoSum(nums, i, result);
+		for (int l = 0; l < n - 2; l++) {
+			if (nums[l] > 0) 
+				break;
+			if (l > 0 && nums[l] == nums[l - 1])
+				continue;
+
+			int m = l + 1;
+			int r = n - 1;
+
+			while (l < r) {
+				int tot = nums[l] + nums[m] + nums[r];
+				if (tot < 0) {
+					l++;
+				}
+				else if (tot > 0) {
+					r--;
+				}
+				else {
+					ans.Add([nums[l], nums[m], nums[r]]);
+					while (l < r && nums[l] == nums[++l]);
+					while (l < r && nums[r] == nums[--r]);
+				}
 			}
 		}
 
-		return result;
-	}
-	private void TwoSum(int[] nums, int targetIndex, IList<IList<int>> result) {
-		int target = -nums[targetIndex],
-		right = nums.Length - 1,
-		left = targetIndex + 1;
-
-		while (left < right) {
-			int sum = nums[left] + nums[right];
-
-			if (target > sum) 
-				left++;
-			else if (target < sum) 
-				right--;
-			else {
-				result.Add([
-					nums[targetIndex],
-					nums[left++],
-					nums[right--]
-				]);
-				while (left < right && nums[left] == nums[left - 1]) left++;
-				while (left < right && nums[right] == nums[right + 1]) right--;
-			}
-		}
+		return ans;
 	}
 }

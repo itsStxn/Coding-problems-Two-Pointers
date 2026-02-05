@@ -19,9 +19,9 @@ Find two lines that together with the x-axis form a container, such that the con
 ***Output:*** 1
 
 ### Constraints
-n == `height.length`  
-2 <= `n` <= 10^5  
-0 <= `height[i]` <= 10^4
+- n == `height.length`
+- 2 <= `n` <= 10^5
+- 0 <= `height[i]` <= 10^4
 
 ## Strategy
 Use two pointers `left` and `right` at the edges of the `height` array. Use the *greedy approach* to move the pointer that points to she smaller height.

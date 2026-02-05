@@ -15,9 +15,9 @@ Given `n` non-negative integers representing an elevation map where the width of
 ***Output***: 9
 
 ### Constraints
-`n` == `height.length`  
-1 <= `n` <= 2 * 10^4  
-0 <= height[i] <= 10^5
+- `n` == `height.length`
+- 1 <= `n` <= 2 * 10^4
+- 0 <= height[i] <= 10^5
 
 ## Strategy
 Use two pointers on the right and left. Use them to index `height` and record the highest peaks they find. Costantly compare the two pointers. If the height on the right is higher than the one on the left, the left pointer moves forward and viceversa.

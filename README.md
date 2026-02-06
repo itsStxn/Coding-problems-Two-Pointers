@@ -3,18 +3,22 @@
 ## Difficulties
 
 ### Easy
+
 - Palindrome Number
 - Search Insert Position
 - Valid Palindrome
 
 ### Medium
+
 - Two Sum II - Input Array Is Sorted
 - 3Sum
 
 ### Hard
+
 - Trapping Rain Water
 
 ## Patterns
+
 - Use of **two indexes** moving through data
 - Data structure is **array or string**
 - Pointers move **left → right** or **both ends inward**

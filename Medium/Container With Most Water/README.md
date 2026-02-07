@@ -24,9 +24,11 @@ Find two lines that together with the x-axis form a container, such that the con
 - 0 <= `height[i]` <= 10^4
 
 ## Strategy
-Use two pointers `left` and `right` at the edges of the `height` array. Use the *greedy approach* to move the pointer that points to she smaller height.
+Use a left and right pointer at the edges of the `height` array. Use the *greedy approach* to move forward (or backward) the pointer that points to the smaller height. Keep calculating the area of the current rectangle:
+- The width is equal to the difference between right and left
+- The height is equal to the smallest one between right and left
 
-Calculate the area considering that the height in the formula needs to be the smaller one.
+Store the largest area.
 
 ## Time Complexity - O(n)
 Each element is traversed once.

@@ -1,5 +1,7 @@
 ﻿using Palindrome_Number;
 
-Solution task = new();
-Console.WriteLine(task.IsPalindromeNum(121));
-Console.WriteLine(task.IsPalindromeStr(121));
+var task = new Solution();
+Console.WriteLine(task.IsPalindrome(121));
+
+task = new AlternativeSolution();
+Console.WriteLine(task.IsPalindrome(121));

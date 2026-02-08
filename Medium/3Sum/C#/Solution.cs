@@ -17,18 +17,18 @@ public class Solution {
 			int m = l + 1;
 			int r = n - 1;
 
-			while (l < r) {
+			while (m < r) {
 				int tot = nums[l] + nums[m] + nums[r];
 				if (tot < 0) {
-					l++;
+					m++;
 				}
 				else if (tot > 0) {
 					r--;
 				}
 				else {
 					ans.Add([nums[l], nums[m], nums[r]]);
-					while (l < r && nums[l] == nums[++l]);
-					while (l < r && nums[r] == nums[--r]);
+					while (m < r && nums[m] == nums[++m]);
+					while (m < r && nums[r] == nums[--r]);
 				}
 			}
 		}

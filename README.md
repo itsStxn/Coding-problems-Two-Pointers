@@ -7,6 +7,8 @@
 - Palindrome Number
 - Search Insert Position
 - Valid Palindrome
+- Squares of a Sorted Array
+- Remove Duplicates from Sorted Array
 
 ### Medium
 
